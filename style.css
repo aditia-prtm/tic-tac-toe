@@ -1,0 +1,137 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 110vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #6b4734, #a88069);
+    /* background: linear-gradient(to right, #6b4734, #d39d7e); */
+    font-family: "Poppins", sans-serif;
+}   
+
+.container{
+    background-color: white;
+    padding: 10px 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.705);
+
+    font-size: 2rem;
+    font-weight: 600;
+
+    width: 25%;
+    min-width: 300px;
+}
+
+
+.container .tittle{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.container p{
+    text-align: center;
+}
+
+.container p::selection{
+    background-color: #6b4734;
+    color: white;
+}
+
+.board-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    border: solid black;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 100%;
+
+    border-top: solid black;
+    border-bottom: solid black;
+}
+
+.row button{    
+    background-color: transparent;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 5rem;
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    border-left: solid black;
+    border-right: solid black;
+}
+
+.reset-container{
+    /* border: solid black; */
+    display: flex;
+    
+
+    padding: 10px 0px;
+}
+
+.reset-container button{
+    background-color: rgb(243, 184, 7);
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    box-shadow: 0px 1px 2px black;
+    border: 0.2px solid rgba(243, 184, 7, 0.784);
+    border-radius: 10px;
+    padding: 5px;
+    width: 30%;
+    cursor: pointer;
+
+    transition: 300ms;
+}
+
+
+.reset-container button:hover{
+    background-color: rgba(230, 174, 6, 0.975);
+}
+
+.reset-container button:active{
+    background-color: rgb(255, 196, 21);
+}
+
+.result-container{
+    /* margin-top: 10px; */
+}
+
+.result-container p{
+    font-size: 1.2rem;
+}
+
+footer{
+    margin-top: 50px;
+    color: white;
+}
+
+.win{
+    color: rgb(13, 95, 196);
+    transition: 300ms;
+}
+
+.lose{
+    color: red;
+    transition: 300ms;
+}
