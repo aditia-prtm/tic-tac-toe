@@ -78,7 +78,6 @@ function resetBoard(){
         x.textContent = "";
         x.classList.remove("win");
         x.classList.remove("lose");
-        console.log(x.textContent);
         filled[i] = false;
         grid[i] = "";
     });
