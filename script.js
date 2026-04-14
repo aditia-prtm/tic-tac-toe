@@ -22,11 +22,9 @@ btn8.addEventListener("click", () => insertX(btn8, 8));
 btn9.addEventListener("click", () => insertX(btn9, 9));
 reset.addEventListener("click", () => resetBoard());
 
-let grid = Array(9).fill("");
-let numLet = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth"];
-let filled = Array(9).fill(false);
-let cntFill = 0;
-let isDone = false;
+const numLet = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth"];
+let grid = Array(9).fill(""), filled = Array(9).fill(false);
+let cntFill = 0, isDone = false;
 
 // FUNCTION
 function getRandomNum(){
@@ -126,9 +124,11 @@ function periksa(){
                 let score = document.getElementById("second-score");
                 let numm = parseInt(score.textContent);
                 score.textContent = eval(numm + 1);
-
             }
             isDone = true;
         }
     }
 }
+
+// REVEAL ANIMATION
+document.querySelector(".reveal").classList.add("active");

@@ -188,3 +188,17 @@ footer{
     color: rgba(252, 38, 38, 0.849);
     transition: 300ms;
 }
+
+
+
+/* ANIMATION */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
