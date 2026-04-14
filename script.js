@@ -114,11 +114,18 @@ function periksa(){
                 p.classList.toggle("win");
                 q.classList.toggle("win");
                 r.classList.toggle("win");
+
+                let score = document.getElementById("first-score");
+                let numm = parseInt(score.textContent);
+                score.textContent = eval(numm + 1);
             }else{
                 result.textContent = "Anda Kalah!";
                 p.classList.toggle("lose");
                 q.classList.toggle("lose");
                 r.classList.toggle("lose");
+
+                let score = document.getElementById("first-score");
+                score.textContent = eval(score.textContent + 1);
             }
             isDone = true;
         }

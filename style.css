@@ -2,7 +2,7 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    min-height: 110vh;
+    /* min-height: 120vh; */
 
     display: flex;
     flex-direction: column;
@@ -23,6 +23,8 @@ body{
     font-size: 2rem;
     font-weight: 600;
 
+    margin-top: 60px;
+
     width: 25%;
     min-width: 300px;
 }
@@ -39,6 +41,59 @@ body{
 
 .container p::selection{
     background-color: #6b4734;
+    color: white;
+}
+
+.container .score-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    
+    /* gap: 10px; */
+    border: 0.9px solid black;
+    border-radius: 5px;
+}
+
+.container .score-container .user{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    
+    /* border-top: solid black;
+    border-bottom: solid black; */
+}
+
+.container .score-container .first{
+    /* background-color: rgb(13, 95, 196); */
+    color: rgb(13, 95, 196);
+}
+
+.container .score-container .second{
+    /* background-color: red; */
+    color: rgba(252, 38, 38, 0.849);
+}
+
+.container .score-container .user .usn{
+    padding: 5px 15px;
+    
+}
+
+.container .score-container .user .score{
+    padding: 5px 10px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.container .score-container .first .score{
+    background-color: rgb(13, 95, 196);
+    color: white;
+}
+
+.container .score-container .second .score{
+    background-color: rgba(252, 38, 38, 0.849);
     color: white;
 }
 
@@ -138,6 +193,6 @@ footer{
 }
 
 .lose{
-    color: red;
+    color: rgba(252, 38, 38, 0.849);
     transition: 300ms;
 }
