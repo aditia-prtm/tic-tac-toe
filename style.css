@@ -80,6 +80,12 @@ body{
 
     border-left: solid black;
     border-right: solid black;
+
+    transition: 500ms;
+}
+
+.row button:hover{
+    background-color: rgb(242, 236, 236);
 }
 
 .reset-container{
