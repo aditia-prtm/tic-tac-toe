@@ -123,8 +123,10 @@ function periksa(){
                 q.classList.toggle("lose");
                 r.classList.toggle("lose");
 
-                let score = document.getElementById("first-score");
-                score.textContent = eval(score.textContent + 1);
+                let score = document.getElementById("second-score");
+                let numm = parseInt(score.textContent);
+                score.textContent = eval(numm + 1);
+
             }
             isDone = true;
         }
