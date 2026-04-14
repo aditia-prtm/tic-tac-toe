@@ -52,7 +52,7 @@ body{
     font-size: 1rem;
     
     /* gap: 10px; */
-    border: 0.9px solid black;
+    border: solid black;
     border-radius: 5px;
 }
 
@@ -68,12 +68,12 @@ body{
 
 .container .score-container .first{
     /* background-color: rgb(13, 95, 196); */
-    color: rgb(13, 95, 196);
+    /* color: rgb(13, 95, 196); */
 }
 
 .container .score-container .second{
     /* background-color: red; */
-    color: rgba(252, 38, 38, 0.849);
+    /* color: rgba(252, 38, 38, 0.849); */
 }
 
 .container .score-container .user .usn{
@@ -83,18 +83,16 @@ body{
 
 .container .score-container .user .score{
     padding: 5px 10px;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 }
 
 .container .score-container .first .score{
-    background-color: rgb(13, 95, 196);
-    color: white;
+    color: rgb(13, 95, 196);
 }
 
 .container .score-container .second .score{
-    background-color: rgba(252, 38, 38, 0.849);
-    color: white;
+    color: rgba(252, 38, 38, 0.849);
 }
 
 .board-container{
