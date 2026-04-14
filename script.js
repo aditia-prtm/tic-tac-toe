@@ -7,7 +7,7 @@ let btn5 = document.getElementById("fifth");
 let btn6 = document.getElementById("sixth");
 let btn7 = document.getElementById("seventh");
 let btn8 = document.getElementById("eighth");
-let btn9 = document.getElementById("nineth");
+let btn9 = document.getElementById("ninth");
 let reset = document.getElementById("reset");
 let result = document.getElementById("result");
 
@@ -23,7 +23,7 @@ btn9.addEventListener("click", () => insertX(btn9, 9));
 reset.addEventListener("click", () => resetBoard());
 
 let grid = Array(9).fill("");
-let numLet = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "nineth"];
+let numLet = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth"];
 let filled = Array(9).fill(false);
 let cntFill = 0;
 let isDone = false;
