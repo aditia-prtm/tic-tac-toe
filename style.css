@@ -2,7 +2,6 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* min-height: 120vh; */
 
     display: flex;
     flex-direction: column;
@@ -10,7 +9,6 @@ body{
     align-items: center;
 
     background: linear-gradient(135deg, #6b4734, #a88069);
-    /* background: linear-gradient(to right, #6b4734, #d39d7e); */
     font-family: "Poppins", sans-serif;
 }   
 
@@ -30,6 +28,8 @@ body{
 }
 
 
+
+
 .container .tittle{
     font-size: 2.5rem;
     font-weight: 700;
@@ -44,14 +44,16 @@ body{
     color: white;
 }
 
+
+
+
 .container .score-container{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
     font-size: 1rem;
-    
-    /* gap: 10px; */
+
     border: solid black;
     border-radius: 5px;
 }
@@ -60,25 +62,10 @@ body{
     display: flex;
     justify-content: space-between;
     width: 100%;
-
-    
-    /* border-top: solid black;
-    border-bottom: solid black; */
-}
-
-.container .score-container .first{
-    /* background-color: rgb(13, 95, 196); */
-    /* color: rgb(13, 95, 196); */
-}
-
-.container .score-container .second{
-    /* background-color: red; */
-    /* color: rgba(252, 38, 38, 0.849); */
 }
 
 .container .score-container .user .usn{
     padding: 5px 15px;
-    
 }
 
 .container .score-container .user .score{
@@ -94,6 +81,9 @@ body{
 .container .score-container .second .score{
     color: rgba(252, 38, 38, 0.849);
 }
+
+
+
 
 .board-container{
     display: flex;
@@ -141,11 +131,11 @@ body{
     background-color: rgb(242, 236, 236);
 }
 
-.reset-container{
-    /* border: solid black; */
-    display: flex;
-    
 
+
+
+.reset-container{
+    display: flex;
     padding: 10px 0px;
 }
 
@@ -163,7 +153,6 @@ body{
     transition: 300ms;
 }
 
-
 .reset-container button:hover{
     background-color: rgba(230, 174, 6, 0.975);
 }
@@ -172,18 +161,23 @@ body{
     background-color: rgb(255, 196, 21);
 }
 
-.result-container{
-    /* margin-top: 10px; */
-}
+
+
 
 .result-container p{
     font-size: 1.2rem;
 }
 
+
+
+
 footer{
     margin-top: 50px;
     color: white;
 }
+
+
+
 
 .win{
     color: rgb(13, 95, 196);
